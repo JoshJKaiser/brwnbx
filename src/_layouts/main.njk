@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="{{ description }}">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? 
+     family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+    <title>{{ title | safe }}</title>
+  </head>
+  <body>
+    {% include "partials/_navigation.njk" %}
+    <main>
+      <h2>{{ h2_1 | safe }}</h2>
+      <p>{{ p_1 | safe}}</p>
+
+      <h2>{{ h2_2 | safe }}</h2>
+      <p>{{ p_2 | safe}}</p>
+
+      <div>
+        <a href="{{blockLink_1}}">
+          <div>
+            <h3>{{ blockTitle_1 }}</h3>
+            <div class="img"><img src:"{{ blockImage_1 }}"/></div>
+            <p>{{ blockDescription_1 }}</p>
+          </div>
+        </a>
+
+        <a href="{{blockLink_2}}">  
+          <div>
+            <h3>{{ blockTitle_2 }}</h3>
+            <div class="img"><img src:"{{ blockImage_2 }}"/></div>
+            <p>{{ blockDescription_2 }}</p>
+          </div>
+        </a>
+        <a href="{{ blockLink_3 }}">
+          <div>
+            <h3>{{ blockTitle_3 }}</h3>
+            <div class="img"><img src:"{{ blockImage_3 }}"/></div>
+            <p>{{ blockDescription_3 }}</p>
+          </div>
+        </a>
+
+        <a href="{{blockLink_4}}">
+          <div>
+            <h3>{{ blockTitle_4 }}</h3>
+            <div class="img"><img src:"{{ blockImage_4 }}"/></div>
+            <p>{{ blockDescription_4 }}</p>
+          </div>
+        </a>
+      </div>
+      <h2>{{ h2_3 | safe }}</h2>
+      <p>{{ p_3 | safe}}</p>
+
+      <h2>{{ h2_4 | safe }}</h2>
+      <p>{{ p_4 | safe}}</p>
+
+      <h2>{{ h2_5 | safe }}</h2>
+      <p>{{ p_5 | safe}}</p>
+
+      <h2>{{ h2_6 | safe }}</h2>
+      <p>{{ p_6 | safe}}</p>
+
+      <p>{{ p_7 | safe}}</p>
+
+      <a src="{{ link }}">{{ linkText }}</a>
+
+    </main>
+    {% include "partials/_footer.njk" %}
+  </body>
+</html>
